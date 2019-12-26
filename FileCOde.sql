@@ -1,17 +1,25 @@
 DROP TABLE IF EXISTS departments;
+
 DROP TABLE IF EXISTS dept_empl;
+
 DROP TABLE IF EXISTS dept_manager;
+
 DROP TABLE IF EXISTS employees;
+
 DROP TABLE IF EXISTS salaries;
+
 DROP TABLE IF EXISTS titles;
 
 -- create table departments with columns dept_no	dept_name and import departments.csv
+
 create table departments (
   dept_no character varying(6) PRIMARY KEY,
   dept_name character varying(50) NOT NULL
   );
+  
 Select * from departments LIMIT 5;
 --create table employees with fields emp_no	birth_date	first_name	last_name	gender	hire_date
+
 create table employees (
   emp_no SERIAL Primary Key,
   birth_date date,
@@ -30,6 +38,7 @@ create table titles (
  to_date date, 
  FOREIGN KEY(emp_no) REFERENCES employees(emp_no)
 	);
+	
 Select * from titles LIMIT 5;	
 
 --create table dept_empl with datafields emp_no	dept_no	from_date	to_date
