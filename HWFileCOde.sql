@@ -11,6 +11,7 @@ DROP TABLE IF EXISTS salaries;
 DROP TABLE IF EXISTS titles;
 
 -- create table departments with columns dept_no	dept_name and import departments.csv
+
 create table departments (
   dept_no character varying(6) PRIMARY KEY,
   dept_name character varying(50) NOT NULL
