@@ -19,6 +19,7 @@ create table departments (
   
 Select * from departments LIMIT 5;
 --create table employees with fields emp_no	birth_date	first_name	last_name	gender	hire_date
+
 create table employees (
   emp_no SERIAL Primary Key,
   birth_date date,
