@@ -1,14 +1,9 @@
 -- drop existing tables if they exist to avoid data duplication
 DROP TABLE IF EXISTS departments;
-
 DROP TABLE IF EXISTS dept_empl;
-
 DROP TABLE IF EXISTS dept_manager;
-
 DROP TABLE IF EXISTS employees;
-
 DROP TABLE IF EXISTS salaries;
-
 DROP TABLE IF EXISTS titles;
 
 -- create table departments with columns dept_no	dept_name and import departments.csv
