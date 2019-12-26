@@ -16,6 +16,7 @@ create table departments (
   dept_no character varying(6) PRIMARY KEY,
   dept_name character varying(50) NOT NULL
   );
+  
 Select * from departments LIMIT 5;
 --create table employees with fields emp_no	birth_date	first_name	last_name	gender	hire_date
 create table employees (
