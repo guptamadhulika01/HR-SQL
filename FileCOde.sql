@@ -1,13 +1,9 @@
+-- drop existing tables if they exist to avoid data duplication
 DROP TABLE IF EXISTS departments;
-
 DROP TABLE IF EXISTS dept_empl;
-
 DROP TABLE IF EXISTS dept_manager;
-
 DROP TABLE IF EXISTS employees;
-
 DROP TABLE IF EXISTS salaries;
-
 DROP TABLE IF EXISTS titles;
 
 -- create table departments with columns dept_no	dept_name and import departments.csv
@@ -28,6 +24,7 @@ create table employees (
   gender character varying (10),
   hire_date date
    );
+   
 -- create table titles with fields as emp_no	title	from_date	to_date
 DROP TABLE IF EXISTS titles;
 create table titles (
@@ -50,6 +47,7 @@ create table dept_empl (
   from_date date,
   to_date date
     );
+    
 SELECT * from dept_empl LIMIT 5; 
 --create table dept_manager with fields dept_no	emp_no	from_date	to_date
 
@@ -116,6 +114,7 @@ SELECT emp.emp_no,emp.last_name, emp.first_name, dept.dept_name
 FROM employees emp, departments dept, dept_empl
 WHERE emp.emp_no = dept_empl.emp_no AND dept_empl.dept_no = dept.dept_no
 AND (dept.dept_name = 'Sales' OR dept.dept_name = 'Development') order by emp.emp_no, dept_name;  
+
 
 --8. In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.
 SELECT last_name, COUNT(last_name) 
