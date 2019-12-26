@@ -29,6 +29,7 @@ create table employees (
   gender character varying (10),
   hire_date date
    );
+   
 -- create table titles with fields as emp_no	title	from_date	to_date
 DROP TABLE IF EXISTS titles;
 create table titles (
