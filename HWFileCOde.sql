@@ -1,6 +1,7 @@
 DROP TABLE IF EXISTS departments;
 
 DROP TABLE IF EXISTS dept_empl;
+
 DROP TABLE IF EXISTS dept_manager;
 DROP TABLE IF EXISTS employees;
 DROP TABLE IF EXISTS salaries;
