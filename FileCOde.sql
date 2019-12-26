@@ -1,3 +1,4 @@
+-- drop existing tables if they exist to avoid data duplication
 DROP TABLE IF EXISTS departments;
 
 DROP TABLE IF EXISTS dept_empl;
