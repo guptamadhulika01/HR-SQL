@@ -52,6 +52,7 @@ create table dept_empl (
   from_date date,
   to_date date
     );
+    
 SELECT * from dept_empl LIMIT 5; 
 --create table dept_manager with fields dept_no	emp_no	from_date	to_date
 
