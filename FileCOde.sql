@@ -38,6 +38,7 @@ create table titles (
  to_date date, 
  FOREIGN KEY(emp_no) REFERENCES employees(emp_no)
 	);
+	
 Select * from titles LIMIT 5;	
 
 --create table dept_empl with datafields emp_no	dept_no	from_date	to_date
